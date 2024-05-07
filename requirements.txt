@@ -1,7 +1,7 @@
 argon2-cffi==20.1.0
 astroid==2.4.2
 async-generator==1.10
-attrs==19.3.0
+# attrs==19.3.0
 backcall==0.2.0
 bleach==3.2.3
 certifi==2020.4.5.2
@@ -112,7 +112,7 @@ tqdm==4.46.1
 traitlets==5.0.5
 # typed-ast==1.4.1
 # typing-extensions==3.7.4.3
-urllib3==1.25.9
+# urllib3==1.25.9
 # visdom==0.1.8.9
 wcwidth==0.2.5
 webencodings==0.5.1
