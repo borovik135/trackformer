@@ -8,6 +8,7 @@
 **/__pycache__/**
 .ipynb_checkpoints/
 datasets/data/
+dist/
 experiment-*
 *.tmp
 *.pkl
