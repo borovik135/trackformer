@@ -1,4 +1,3 @@
-#!/usr/bin/env bash
 python src/track.py with\
   dataset_name=DEMO\
   data_root_dir=data/snakeboard\

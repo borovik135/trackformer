@@ -20,14 +20,15 @@ WORK_DIR = str(Path(__file__).parent.absolute())
 ex = sacred.Experiment('submit', ingredients=[train.ex])
 ex.add_config('cfgs/submit.yaml')
 
+shared_dir = "/data/users" # TODO param/config
 
 def get_shared_folder() -> Path:
     user = os.getenv("USER")
-    if Path("/storage/slurm").is_dir():
-        path = Path(f"/storage/slurm/{user}/runs")
+    if Path(shared_dir).is_dir():
+        path = Path(f"{shared_dir}/{user}/slurm")
         path.mkdir(exist_ok=True)
         return path
-    raise RuntimeError("No shared folder available")
+    raise RuntimeError(f"no shared folder: {shared_dir}")
 
 
 def get_init_file() -> Path:
