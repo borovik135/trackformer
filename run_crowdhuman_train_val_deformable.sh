@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # CrowdHuman pre-training executed on 4 x 40 GB GPUs
-PCMD=$1 # e.g. '-m pdb'
-python $PCMD src/run_with_submitit.py with \
+PARG=$1 # e.g. '-m pdb'
+python $PARG src/run_with_submitit.py with \
   num_gpus=2 \
   vram=20GB \
   slurm_gres=gpu:2 \
