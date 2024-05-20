@@ -1,4 +1,4 @@
-python -m torch.distributed.launch --nproc_per_node=2 --use_env \
+python -m torch.distributed.launch --nproc_per_node=1 --use_env \
 src/train.py with \
   crowdhuman \
   deformable \
